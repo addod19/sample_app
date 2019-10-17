@@ -36,6 +36,22 @@ If the test suite passes, you'll be ready to run the app in a local server:
 ```
 $ rails server
 ```
+## Heroku deployment 
 
+```
+heroku create
+```
+```
+heroku git:remote -a app_name
+```
+```
+git push -u heroku master
+```
+```
+heroku open
+```
+Put this in your address bar to see my beautiful Sample app
+```
+https://damp-forest-03976.herokuapp.com/
 For more information, see the
 [*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
