@@ -50,10 +50,10 @@ git push -u heroku master
 ```
 heroku open
 ```
-Put this in your address bar to see my beautiful Sample app
-```
-https://damp-forest-03976.herokuapp.com/
 
+```
+copy => https://damp-forest-03976.herokuapp.com/
+```
 
 For more information, see the
 [*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
