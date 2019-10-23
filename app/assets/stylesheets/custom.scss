@@ -1,5 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+$light-gray: #777;
+$gray-medium-light: #eaeaea;
+
+/* Universal */
+
 body {
     padding-top: 60px;
 }
@@ -14,11 +19,13 @@ textarea {
 
 .center {
     text-align: center;
+    h1 {
+        margin-bottom: 10px;
+    }
 }
 
-.center h1 {
-    margin-bottom: 10px;
-}
+
+/* Typography */
 
 .mt-lg-5 {
     margin-top: 1.3em;
@@ -46,28 +53,12 @@ h2 {
     margin-bottom: 30px;
     text-align: center;
     font-weight: normal;
-    color: #777;
+    color: $light-gray;
 }
 
 p {
     font-size: 1.1em;
     line-height: 1.7em;
-}
-
-#logo {
-    float: left;
-    margin-right: 10px;
-    font-size: 1.7em;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    padding-top: 9px;
-    font-weight: bold;
-}
-
-#logo:hover {
-    color: #fff;
-    text-decoration: none;
 }
 
 #red {
@@ -82,34 +73,47 @@ p {
     color: green;
 }
 
-// img {
-//     display: none;
-// }
+
+/* header */
+
+#logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+/* footer */
+
 footer {
     margin-top: 45px;
     padding-top: 5px;
-    border-top: 1px solid #eaeaea;
-    color: #777;
-}
-
-footer a {
-    color: #555;
-}
-
-footer a:hover {
-    color: #222;
-}
-
-footer small {
-    float: left;
-}
-
-footer ul {
-    float: right;
-    list-style: none;
-}
-
-footer ul li {
-    float: left;
-    margin-left: 25px;
+    border-top: 1px solid $gray-medium-light;
+    color: $light-gray;
+    a {
+        color: #555;
+        &:hover {
+            color: #222;
+        }
+    }
+    small {
+        float: left;
+    }
+    ul {
+        float: right;
+        list-style: none;
+        li {
+            float: left;
+            margin-left: 25px;
+        }
+    }
 }
