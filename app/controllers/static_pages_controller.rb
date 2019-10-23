@@ -2,18 +2,10 @@
 
 class StaticPagesController < ApplicationController
   def home
-    # code
+    @title = 'home'
   end
 
-  def help
-    # code
-  end
+  def help; end
 
-  def about
-    # code
-  end
-
-  def contact
-    # code
-  end
+  def about; end
 end
