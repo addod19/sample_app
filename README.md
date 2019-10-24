@@ -1,4 +1,4 @@
-# Nick's Ruby on Rails Tutorial sample application
+# Daniel's Ruby on Rails Tutorial sample application
 
 This is the sample application for
 [_Ruby on Rails Tutorial:
