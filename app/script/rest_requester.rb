@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rest-client'
 
 # puts "Enter your search query"
