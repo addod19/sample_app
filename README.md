@@ -1,8 +1,8 @@
-# Ruby on Rails Tutorial sample application
+# Daniel's Ruby on Rails Tutorial sample application
 
 This is the sample application for
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)
+[_Ruby on Rails Tutorial:
+Learn Web Development with Rails_](https://www.railstutorial.org/)
 by [Michael Hartl](http://www.michaelhartl.com/).
 
 ## License
@@ -36,24 +36,6 @@ If the test suite passes, you'll be ready to run the app in a local server:
 ```
 $ rails server
 ```
-## Heroku deployment 
-
-```
-heroku create
-```
-```
-heroku git:remote -a app_name
-```
-```
-git push -u heroku master
-```
-```
-heroku open
-```
-
-```
-copy => https://damp-forest-03976.herokuapp.com/
-```
 
 For more information, see the
-[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
+[_Ruby on Rails Tutorial_ book](https://www.railstutorial.org/book).
