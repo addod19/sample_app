@@ -1,7 +1,12 @@
-<div class="text-center">
-    <p>Name: <%= @user.name %></p> 
-    <p>Email: <%= @user.email %></p>
-    <p>Created At: <%= @user.created_at %></p> 
-    <p>Updated at: <%= @user.updated_at %></p>
-    <p>Time Now: <%= Time.now%></p>
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
 </div>
+
