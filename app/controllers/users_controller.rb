@@ -3,12 +3,12 @@
 class UsersController < ApplicationController
   def new
     @user = User.new
-    #debugger
+    # debugger
   end
 
   def show
     @user = User.find(params[:id])
-    #debugger
+    # debugger
   end
 
   def create
