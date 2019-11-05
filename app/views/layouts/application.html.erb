@@ -8,6 +8,9 @@
   <body>
     <%= render 'layouts/header'%>
     <div class="container">
+      <% flash.each do |msg_type, msg| %>
+        <div class="alert alert-<%= msg_type %>"><%= msg %></div>
+      <% end %>
       <%= yield %>
       <%= render 'layouts/footer'%>
       <%= debug(params) if Rails.env.development? %>
