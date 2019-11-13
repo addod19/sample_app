@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
     #   params[:sessions][:remember_me] == '1' ? remember(user) : forget(user)
     #   redirect_back_or user
     user = User.find_by(email: params[:sessions][:email].downcase)
-    if user && user.authenticate(params[:sessions][:password])
+    if user&.authenticate(params[:sessions][:password])
       log_in user
       params[:sessions][:remember_me] == '1' ? remember(user) : forget(user)
       redirect_back_or user
