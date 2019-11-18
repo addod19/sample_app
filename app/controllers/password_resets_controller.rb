@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class PasswordResetsController < ApplicationController
-  before_action :get_user, only: %i[edit update]
+  before_action :user, only: %i[edit update]
   before_action :valid_user, only: %i[edit update]
   before_action :check_expiration, only: %i[edit update] # Case (1)
 
@@ -41,7 +41,7 @@ class PasswordResetsController < ApplicationController
     params.require(:user).permit(:password, :password_confirmation)
   end
 
-  def get_user
+  def user
     @user = User.find_by(email: params[:email])
   end
 
@@ -52,9 +52,10 @@ class PasswordResetsController < ApplicationController
 
   # Checks expiration of reset token.
   def check_expiration
-    if @user.password_reset_expired?
-      flash[:danger] = 'Password reset has expired.'
-      redirect_to new_password_reset_url
-    end
+    # using guard clause in this method
+    return if @user.password_reset_expired?
+
+    flash[:danger] = 'Password reset has expired.'
+    redirect_to new_password_reset_url
   end
 end
