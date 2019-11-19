@@ -8,6 +8,7 @@ class MicropostsController < ApplicationController
       redirect_to root_url
     else
       #flash[:error] = 'Cannot create micropost because field is empty'
+      @feed_items = []
       render 'static_pages/home'
     end
   end
