@@ -81,7 +81,8 @@ class User < ApplicationRecord
   end
 
   def feed
-    microposts
+    Micropost.where("user_id IN (?) OR user_id = ?", following_ids, id)
+    # microposts
     #Micropost.where("user_id = ?", id)
   end
 
