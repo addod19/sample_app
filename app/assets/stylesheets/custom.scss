@@ -1,8 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 /* mixins, variables, etc. */
 
+$white: #fff;
 $light-gray: #777;
 $gray-medium-light: #eaeaea;
 $red: red;
@@ -12,6 +14,12 @@ $green: green;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+body {
+    background: {
+        image: asset_url("");
+    }
 }
 
 
