@@ -87,7 +87,7 @@ class UserTest < ActiveSupport::TestCase
 
   test 'associated microposts should be destroyed' do
     @user.save
-    @user.microposts.create!(content: "Lorem ipsum")
+    @user.microposts.create!(content: 'Lorem ipsum')
     assert_difference 'Micropost.count', -1 do
       @user.destroy
     end
@@ -95,7 +95,7 @@ class UserTest < ActiveSupport::TestCase
 
   test 'should follow and unfollow a user' do
     michael = users(:michael)
-    archer  = users(:archer)
+    archer = users(:archer)
     assert_not michael.following?(archer)
     michael.follow(archer)
     assert michael.following?(archer)
@@ -106,8 +106,8 @@ class UserTest < ActiveSupport::TestCase
 
   test 'feed should have the right posts' do
     michael = users(:michael)
-    archer  = users(:archer)
-    lana    = users(:lana)
+    archer = users(:archer)
+    lana = users(:lana)
     # Posts from followed user
     lana.microposts.each do |post_following|
       assert michael.feed.include?(post_following)
