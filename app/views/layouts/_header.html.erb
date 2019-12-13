@@ -4,7 +4,7 @@
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Home",   root_path, id: "text-red" %></li>
-            <li><%= link_to "Help",   help_path, id: "text-gold" %></li>
+            <li><%= link_to "Help",   help_path, id: "text-gold" %><i class="fas fa-angle-right"></i></li>
             <% if logged_in? %>
               <li><%= link_to "Users", users_path , id: "text-green"%></li>
               <li class="dropdown">
