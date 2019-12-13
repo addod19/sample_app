@@ -7,3 +7,18 @@
 # two:
 #   follower_id: 1
 #   followed_id: 1
+one:
+  follower: michael
+  followed: lana
+
+two:
+  follower: michael
+  followed: malory
+  
+three:
+  follower: lana
+  followed: michael
+
+four:
+  follower: archer
+  followed: michael

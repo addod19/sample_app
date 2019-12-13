@@ -4,6 +4,7 @@
 
 /* mixins, variables, etc. */
 
+$one: 10px;
 $white: #fff;
 $light-gray: #777;
 $gray-medium-light: #eaeaea;
@@ -42,6 +43,10 @@ textarea {
     h1 {
         margin-bottom: 10px;
     }
+}
+
+.mt-1 {
+    margin-top: $one;
 }
 
 
