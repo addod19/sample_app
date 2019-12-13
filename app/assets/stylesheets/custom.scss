@@ -1,8 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 /* mixins, variables, etc. */
 
+$one: 10px;
+$white: #fff;
 $light-gray: #777;
 $gray-medium-light: #eaeaea;
 $red: red;
@@ -12,6 +15,12 @@ $green: green;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+body {
+    background: {
+        image: asset_url("");
+    }
 }
 
 
@@ -34,6 +43,10 @@ textarea {
     h1 {
         margin-bottom: 10px;
     }
+}
+
+.mt-1 {
+    margin-top: $one;
 }
 
 
@@ -232,6 +245,44 @@ footer {
             margin-left: 15px;
         }
     }
+}
+
+.stats {
+    overflow: auto;
+    margin-top: 0;
+    padding: 0;
+    a {
+        float: left;
+        padding: 0 10px;
+        border-left: 1px solid $gray-lighter;
+        color: gray;
+        &:first-child {
+            padding-left: 0;
+            border: 0;
+        }
+        &:hover {
+            text-decoration: none;
+            color: blue;
+        }
+    }
+    strong {
+        display: block;
+    }
+}
+
+.user_avatars {
+    overflow: auto;
+    margin-top: 10px;
+    .gravatar {
+        margin: 1px 1px;
+    }
+    a {
+        padding: 0;
+    }
+}
+
+.users.follow {
+    padding: 0;
 }
 
 

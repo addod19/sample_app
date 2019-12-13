@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class MicropostTest < ActiveSupport::TestCase
@@ -6,9 +8,9 @@ class MicropostTest < ActiveSupport::TestCase
   # end
   def setup
     @user = users(:michael)
-    @micropost = @user.microposts.build(content: "Testing content using the build method")
+    @micropost = @user.microposts.build(content: 'Testing content using the build method')
     # This code is not idiomatically correct.
-    #@micropost = Micropost.new(content: "Lorem ipsum", user_id: @user.id)
+    # @micropost = Micropost.new(content: "Lorem ipsum", user_id: @user.id)
   end
 
   test 'should be valid' do
