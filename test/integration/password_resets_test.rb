@@ -64,11 +64,7 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     assert_redirected_to user
   end
 
-<<<<<<< HEAD
-  test "expired token" do
-=======
   test 'expired token' do
->>>>>>> dev
     get new_password_reset_path
     post password_resets_path,
          params: { password_reset: { email: @user.email } }
@@ -83,8 +79,4 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     follow_redirect!
     assert_match /FILL_IN/i, response.body
   end
-<<<<<<< HEAD
-  
-=======
->>>>>>> dev
 end
