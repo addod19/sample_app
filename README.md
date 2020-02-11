@@ -5,6 +5,10 @@ This is the sample application for
 Learn Web Development with Rails_](https://www.railstutorial.org/)
 by [Michael Hartl](http://www.michaelhartl.com/).
 
+## Screenshot
+![screenshot](app/assets/images/shot.jpg)
+
+
 ## License
 
 All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
